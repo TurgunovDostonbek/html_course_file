@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 16</title>
+</head>
+
+<body>
+  <!-- Form elementlari. -->
+  <h1>Form Elementlari</h1>
+  <p>Form elementlari foydalanuvchi ma'lumotlarini kiritish va yuborish uchun ishlatiladi.</p>
+
+  <form action="#" method="post">
+    <label for="name">Ism:</label> <!-- label => inputga bog'lanadi foydalanuvchiga tushunarli bo'lishi uchun -->
+    <input type="text" id="name" name="name" required> <!-- input => foydalanuvchi ma'lumot kiritishi uchun -->
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Yosh:</label>
+    <input type="number" id="age" name="age" required>
+
+    <input type="submit" value="Yuborish"> <!-- submit => formni yuborish uchun -->
+    <input type="reset" value="Tozalash"> <!-- reset => formni tozalash uchun -->
+    <input type="button" value="Bosish" onclick="alert('Button bosildi!')">
+    <!-- button => oddiy tugma, JavaScript bilan ishlatilishi mumkin -->
+    <input type="checkbox" id="subscribe" name="subscribe"> <!-- checkbox => foydalanuvchi tanlashi uchun -->
+    <input type="radio">
+    <input type="file" id="file" name="file"> <!-- file => fayl tanlash uchun -->
+    <input type="date" id="date" name="date"> <!-- date => sana tanlash uchun -->
+    <input type="time" id="time" name="time"> <!-- time => vaqt tanlash uchun -->
+    <input type="color" id="color" name="color"> <!-- color => rang tanlash uchun -->
+    <input type="range" id="range" name="range" min="0" max="100"> <!-- range => diapazon tanlash uchun -->
+    <input type="search" id="search" name="search" placeholder="Qidirish..."> <!-- search => qidirish maydoni -->
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Xabar..."></textarea>
+    <!-- textarea => ko'p qatorli matn kiritish uchun -->
+    <select id="options" name="options"> <!-- select => tanlovlar ro'yxati -->
+      <option value="option1">Tanlov 1</option>
+      <option value="option2">Tanlov 2</option>
+      <option value="option3">Tanlov 3</option>
+    </select>
+
+    <button type="submit">Yuborish</button>
+  </form>
+  <p>Form elementlari foydalanuvchi ma'lumotlarini to'plash va yuborish uchun juda muhimdir. Ular
+    veb-saytlar va ilovalar uchun interaktivlikni ta'minlaydi.</p>
+
+
+  <!-- Form elementlari HTML5 da juda ko'p yangi imkoniyatlar bilan kengaytirilgan. -->
+  <!-- fieldset va legend - Formani guruhlash -->
+  <h2>Fieldset va Legend</h2>
+  <p>Fieldset va legend elementlari formani guruhlash va uning maqsadini tushuntirish uchun ishlatiladi.</p>
+  <p>Fieldset - bu form elementlarini guruhlash uchun ishlatiladi,
+    legend esa bu guruhning sarlavhasini belgilash uchun ishlatiladi.</p>
+
+  <fieldset style="width: 200px;">
+    <legend>Shaxsiy ma'lumotlar</legend>
+    <label for="ism">Ismingiz:</label>
+    <input type="text" id="ism" name="ism">
+  </fieldset>
+
+  <fieldset style="width: 500px; height: 200px;">
+    <legend>Shaxsiy ma'lumotlar</legend>
+    <label for="ism">Ismingiz:</label>
+    <input type="text" id="ism" name="ism">
+    <br>
+    <br>
+    <textarea name="message" id="message" rows="4" cols="50" placeholder="Xabar..."></textarea>
+  </fieldset>
+</body>
+
+</html>

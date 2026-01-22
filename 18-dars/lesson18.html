@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 18</title>
+</head>
+
+<body>
+  <!-- JS, Script tag. -->
+  <p>JavaScript (JS) - bu veb-sahifalarga interaktivlik va dinamiklik qo'shish uchun ishlatiladigan skriptlash tili. U
+    klient tomonida, ya'ni brauzerda ishlaydi va HTML hamda CSS bilan birgalikda veb-saytlarni jonli va foydalanuvchi
+    bilan muloqotda bo'ladigan qilish uchun ishlatiladi.</p>
+
+  <h1 id="greeting">Hello, World!</h1>
+  <button onclick="changeText()">Click Me</button>
+
+
+  <!-- JavaScript kodini yozish uchun script tegidan foydalanamiz. -->
+  <script>
+    function changeText() {
+      document.getElementById('greeting').innerHTML = "Hello, JavaScript!";
+    }
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 17</title>
+</head>
+
+<body>
+  <!-- Media -->
+  <h1>Media Elementlari</h1>
+  <p>Media elementlari veb-sahifalarda audio va video fayllarni qo'shish uchun ishlatiladi. HTML5 da audio va video
+    elementlari qo'llab-quvvatlanadi.</p>
+  <p>Audio va video elementlari foydalanuvchilarga media fayllarni to'g'ridan-to'g'ri brauzerda o'ynash imkonini beradi.
+  </p>
+
+  <!-- Audio taglari-->
+  <h2>Audio Taglari</h2>
+  <p>Audio tagi HTML5 da audio fayllarni o'ynash uchun ishlatiladi.</p>
+  <audio controls style="border: 1px red solid; background-color: red;">
+    <source src="./audio/__Hiya___Oriental_Reggaeton_Type_Beat_Instrumental_Prod_by_Ultra.mp3" type="audio/mpeg">
+    Sizning brauzeringiz audio tegini qo'llab-quvvatlamaydi.
+  </audio>
+
+  <!-- Video taglari-->
+  <h2>Video Taglari</h2>
+  <p>Video tagi HTML5 da video fayllarni o'ynash uchun ishlatiladi.</p>
+  <video controls>
+    <source src="./video/" type="video/mp4">
+    Sizning brauzeringiz video tegini qo'llab-quvvatlamaydi.
+  </video>
+
+  <!-- Iframe -->
+  <h2>Iframe</h2>
+  <p>Iframe (inline frame) - bu boshqa bir veb-sahifani joriy sahifaga joylashtirish uchun ishlatiladi.</p>
+  <iframe src="https://www.example.com" width="600" height="400"></iframe>
+  <br>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HUm8k3E9NI0?si=RcJY5eV9ktmFcisW"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <p>Iframe yordamida boshqa veb-sahifalarni, xaritalarni yoki videolarni osonlik bilan qo'shishingiz mumkin.</p>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098374!2d144.96305781531695!3d-37.816279442021595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f1f1f1%3A0x5e1d123456789abc!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2s!4v1612345678901"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</body>
+
+</html>

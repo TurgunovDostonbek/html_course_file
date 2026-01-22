@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 11</title>
+</head>
+
+<body>
+  <!-- Enteties nima. -->
+  <p>Enteties - bu HTML da maxsus belgilarni ifodalash uchun ishlatiladigan kodlar. Masalan, &amp; - ampersand, &lt; -
+    kichik
+    belgi, &gt; - katta belgi va boshqalar.</p>
+
+  <!-- Enteties misollari -->
+  <p>&amp; - ampersand</p>
+  <p>&lt; - kichik belgi</p>
+  <p>&gt; - katta belgi</p>
+  <p>&quot; - qo'shtirnoq</p>
+  <p>&#39; - apostrof</p>
+  <p>&#169; - mualliflik huquqi belgisi</p>
+  <p>&#174; - savdo belgisi</p>
+  <p>&#8364; - yevro belgisi</p>
+  <p>&#36; - dollar belgisi</p>
+  <p>&#163; - funt sterling belgisi</p>
+  <p>&#165; - yen belgisi</p>
+
+  <!-- SVG nima. -->
+  <p>SVG (Scalable Vector Graphics) - bu vektor grafikalarini ifodalash uchun ishlatiladigan XML asosidagi format. SVG
+    grafikalarini HTML hujjatlarida to'g'ridan-to'g'ri joylashtirish mumkin va ular o'lchamlarini yo'qotmasdan
+    kattalashtirilishi mumkin.</p>
+  <!-- SVG elementini yaratish -->
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+  </svg>
+
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="30" stroke="black" stroke-width="5" fill="red" />
+  </svg>
+
+  <!-- Canvas nima. -->
+  <p>Canvas - bu HTML5 da grafikalarni chizish uchun ishlatiladigan element. U JavaScript yordamida dinamik ravishda
+    chizilgan grafikalarni yaratishga imkon beradi. Canvas elementi <canvas> tegida joylashgan bo'lib, uning o'lchamlari
+      kenglik va balandlik atributlari bilan belgilanadi.</p>
+  <!-- Canvas elementini yaratish -->
+  <canvas id="myCanvas" width="600" height="600"></canvas>
+  <script>
+    // Canvas elementini olish
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // To'rtburchak chizish
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(50, 50, 200, 100);
+
+    // Doira chizish
+    ctx.beginPath();
+    ctx.arc(300, 150, 50, 0, Math.PI * 2);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+
+    // Matn chizish
+    ctx.font = '20px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText('Hello Canvas', 100, 250);
+  </script>
+</body>
+
+</html>

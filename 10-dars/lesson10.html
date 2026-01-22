@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10</title>
+</head>
+
+<style>
+  .qizil {
+    color: red;
+  }
+</style>
+
+<body>
+  <!-- Class nima? -->
+  <p>Class - bu HTML elementlariga bir yoki bir nechta xususiyatlarni birlashtirish imkonini beruvchi
+    atributdir. CSS da class lar orqali bir nechta elementlarga bir xil uslub berish mumkin.</p>
+
+  <h1 class="sarlavha">Heading 1</h1> <!-- Class misoli -->
+
+  <button onclick="document.getElementById('matn').classList.add('qizil')">Qizil bolsin</button>
+  <p id="matn">Bu matn rangi ozgaradi.</p>
+
+  <!-- Id nima? -->
+  <p>Id - bu HTML elementini noyob ravishda aniqlash uchun ishlatiladigan atributdir. Har bir id faqat bitta
+    elementga berilishi kerak va CSS da id orqali aniq bir elementga uslub berish mumkin.</p>
+
+  <h2 id="sarlavha">Heading 2</h2> <!-- Id misoli -->
+
+  <!-- BEM nima? -->
+  <p>BEM (Block Element Modifier) - bu CSS uslublarini tashkil qilish va nomlash uchun ishlatiladigan metodologiya.
+    BEM yordamida kodni o'qish va tushunishni osonlashtirish mumkin. BEM da har bir element blok, element va
+    modifikatorlardan iborat bo'ladi.</p>
+
+  <h3 class="block__element--modifier">BEM Misoli</h3>
+  <div class="card">
+    <div class="card__header">Card Header</div>
+    <div class="card__body">Card Body</div>
+    <div class="card__footer">Card Footer</div>
+  </div>
+
+  <!-- Class berish qoidalari? -->
+  <p>Class berish qoidalari quyidagilardan iborat:</p>
+  <ul>
+    <li>Class nomi kichik harflar bilan boshlanishi va bo'sh joylar o'rniga chiziqchalar ( - ) ishlatilishi kerak.</li>
+    <li>Class nomi ma'noli va tushunarli bo'lishi lozim.</li>
+    <li>Bir elementga bir nechta class berish mumkin.</li>
+  </ul>
+
+  <!-- Class, Id Farqlari? -->
+  <p>Class va Id o'rtasidagi farqlar:</p>
+  <ul>
+    <li>Class bir nechta elementlarga berilishi mumkin, Id esa faqat bitta elementga beriladi.</li>
+    <li>Class nomi takrorlanishi mumkin, Id nomi esa noyob bo'lishi kerak.</li>
+  </ul>
+
+</body>
+
+</html>

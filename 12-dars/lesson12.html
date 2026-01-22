@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 12</title>
+</head>
+
+<body>
+  <!--//////////////////////////////// Links tag? //////////////////////////////////////////-->
+
+  <!-- **Sintaksis:** -->
+  <a href="url">Link Matni</a>
+  <!-- **Tushuntirish:** -->
+  <!-- - **`href`** (hyperlink reference): Bu atribut linkning manzilini belgilaydi (masalan, boshqa veb-sahifalarga, rasm
+  yoki faylga yo'naltiruvchi URL).
+  - **`Link Matni`**: Bu foydalanuvchi ko'radigan matn bo'lib, uni bosish orqali manzilga o'tiladi -->
+
+
+  <!-- Ichki link -->
+  <a href="#section2">Bosh sahifa</a>
+  <h1 id="section2">Section 2</h1>
+
+  <!-- Telfon raqamga link -->
+  <a href="tel:+998901234567">Telefon raqamga qo'ng'iroq qilish</a>
+
+  <!-- Emailga link -->
+  <a href="mailto:example@example.com">Emailga yozish</a>
+
+  <!-- Fayl yuklash link -->
+  <a href="file.pdf" download>Faylni yuklab olish</a>
+
+  <br>
+
+  <!--//////////////////////////////////////// Img tags? ///////////////////////////////////////////-->
+
+  <!-- **Sintaksis:** -->
+  <img src="Images" alt="Image Description">
+  <!-- **Tushuntirish:** -->
+  <!-- - **`src`** (source): Bu atribut rasmning manzilini belgilaydi.
+   ichki yoki tashqi manzilga yo'naltirishi mumkin.
+  - **`alt`** (alternative text): Bu atribut rasm yuklanmasa yoki ko'rsatilmasa, foydalanuvchiga ko'rsatiladigan matnni belgilaydi. -->
+
+  <!-- Rasmni ko'rsatish -->
+  <!-- ichki manzil -->
+  <img src="./img/shop.png" alt="Placeholder Image">
+  <!-- tashqi manzil -->
+  <img src="https://picsum.photos/200/300?grayscale" alt="Placeholder Image">
+
+  <!-- Fayl yokida Rasm turlari -->
+  <!-- - **JPEG** (rasmlar va fotosuratlar uchun yaxshi)
+  - **PNG** (shaffof fonli tasvirlar uchun)
+  - **GIF** (animatsiyalar uchun)
+  - **SVG** (vektorli rasmlar uchun)
+  - **WebP** (zamonaviy va siqilgan tasvirlar) -->
+
+  <img src="https://picsum.photos/200/300?grayscale" alt="Sunset" loading="lazy">
+
+
+
+  <!--//////////////////////////// List tag? //////////////////////////////////////-->
+
+  <!-- Listlar 2 -xil bo'ladi.  Tartibli and Tartibsiz -->
+
+  <!--1-Tartibli ro'yxat -->
+  <ol type="1">
+    <li>Birinchi element</li>
+    <li>Ikkinchi element</li>
+    <li>Uchinchi element</li>
+  </ol>
+
+  <ol type="A">
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+  </ol>
+
+  <ol type="a">
+    <li>Birinchi element</li>
+    <li>Ikkinchi element</li>
+    <li>Uchinchi element</li>
+  </ol>
+
+  <ol type="I">
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+  </ol>
+
+  <ol type="i">
+    <li>Birinchi element</li>
+    <li>Ikkinchi element</li>
+    <li>Uchinchi element</li>
+    <li>Uchinchi element</li>
+    <li>Uchinchi element</li>
+  </ol>
+
+  <!--2-Tartibsiz ro'yxat -->
+  <ul type="disc">
+    <li>Birinchi element</li>
+    <li>Ikkinchi element</li>
+    <li>Uchinchi element</li>
+  </ul>
+
+  <ul type="circle">
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+    <li>Salom hammaga</li>
+  </ul>
+
+  <ul type="square">
+    <li>Birinchi element</li>
+    <li>Ikkinchi element</li>
+    <li>Uchinchi element</li>
+  </ul>
+
+  <!-- Tariflar ro'yhati (Description list)  -->
+  <dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    <dt>JavaScript</dt>
+    <dd>Dynamic programming language for web development</dd>
+  </dl>
+
+</body>
+
+</html>
